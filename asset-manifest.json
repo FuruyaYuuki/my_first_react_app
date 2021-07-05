@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my_first_react_app/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/my_first_react_app/static/js/main.e3ff7184.chunk.js",
-    "main.js.map": "/my_first_react_app/static/js/main.e3ff7184.chunk.js.map",
-    "runtime-main.js": "/my_first_react_app/static/js/runtime-main.6395f4d0.js",
-    "runtime-main.js.map": "/my_first_react_app/static/js/runtime-main.6395f4d0.js.map",
-    "static/js/2.7d770d86.chunk.js": "/my_first_react_app/static/js/2.7d770d86.chunk.js",
-    "static/js/2.7d770d86.chunk.js.map": "/my_first_react_app/static/js/2.7d770d86.chunk.js.map",
+    "main.css": "/my_first_react_app/static/css/main.a617e044.chunk.css",
+    "main.js": "/my_first_react_app/static/js/main.8de3581f.chunk.js",
+    "main.js.map": "/my_first_react_app/static/js/main.8de3581f.chunk.js.map",
+    "runtime-main.js": "/my_first_react_app/static/js/runtime-main.bdc4024d.js",
+    "runtime-main.js.map": "/my_first_react_app/static/js/runtime-main.bdc4024d.js.map",
+    "static/js/2.228e2fb3.chunk.js": "/my_first_react_app/static/js/2.228e2fb3.chunk.js",
+    "static/js/2.228e2fb3.chunk.js.map": "/my_first_react_app/static/js/2.228e2fb3.chunk.js.map",
     "index.html": "/my_first_react_app/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/my_first_react_app/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.7d770d86.chunk.js.LICENSE.txt": "/my_first_react_app/static/js/2.7d770d86.chunk.js.LICENSE.txt"
+    "static/css/main.a617e044.chunk.css.map": "/my_first_react_app/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.228e2fb3.chunk.js.LICENSE.txt": "/my_first_react_app/static/js/2.228e2fb3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6395f4d0.js",
-    "static/js/2.7d770d86.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.e3ff7184.chunk.js"
+    "static/js/runtime-main.bdc4024d.js",
+    "static/js/2.228e2fb3.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.8de3581f.chunk.js"
   ]
 }
