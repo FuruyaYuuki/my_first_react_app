@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useState } from 'react';
 
 const ListItem = styled.div`
   padding: 8px 16px;
@@ -19,13 +20,13 @@ const QaLists = [
 export const Main = () => {
 
   return (
-      <div>
-        <h4>質問一覧</h4>
-        {
-          QaLists.map((QaList, index) => {
-            return <ListItem key={index}>{ QaList.q }</ListItem>
-          })
-        }
-      </div>
+    <div>
+      <h4>質問一覧</h4>
+      {
+        QaLists.map((QaList, index) => {
+          return <ListItem key={index}>{ QaList.q }</ListItem>
+        })
+      }
+    </div>
   )
 }
