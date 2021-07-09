@@ -8,6 +8,7 @@ const Container = styled.div`
 `
 
 const FooterClass = styled.footer`
+ height: 80px;
  text-align: center;
 `
 
@@ -16,7 +17,7 @@ export const Footer = () => {
   return (
     <FooterClass>
       <Container>
-        <p>(C) Onlien心療内科 2021</p>
+        <p>(C) Onlien心療相談室 2021</p>
       </Container>
     </FooterClass>
   )
