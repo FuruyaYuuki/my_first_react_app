@@ -17,7 +17,7 @@ export const Footer = () => {
   return (
     <FooterClass>
       <Container>
-        <p>(C) Onlien心療相談室 2021</p>
+        <p>(C) Online心療相談室 2021</p>
       </Container>
     </FooterClass>
   )

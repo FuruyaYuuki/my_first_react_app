@@ -1,22 +1,21 @@
 import styled from 'styled-components';
-import { Header } from "./Header"
-import { Main } from "./Main"
-import { Footer } from "./Footer"
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Home } from "./Home"
+import { Comment } from "./Comment"
 
 const Body = styled.body`
-  margin: 0;
+  margin: 0 auto;
 `
 
 function App() {
 
   return (
-    <Body>
-      <Header />
-
-      <Main />
-
-      <Footer />
-    </Body>
+    <BrowserRouter>
+      <Body>
+        <Route exact path="/" component={Home} />
+        <Route path="/comment" component={Comment} />
+      </Body>
+    </BrowserRouter>
   );
 }
 

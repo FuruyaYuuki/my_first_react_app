@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`
 
 const HeaderClass = styled.header`
   height: 50px;
@@ -10,12 +15,12 @@ const Container = styled.div`
   margin: 0 auto;
   display: grid;
 
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: 200px 200px;
   justify-content: center;
   place-items: center;
 `
 
-const HeaderItem = styled.a`
+const HeaderItem = styled.div`
   font-size: 15px;
   color: rgba(255, 255, 255, 0.664);
   transition: all 0.5s;
@@ -29,17 +34,17 @@ const HeaderLogo = styled.img`
   width: 30px;
 `
 
-
 export const Header = () => {
 
   return (
     <HeaderClass>
       <Container>
-        <HeaderItem>
-          <a href=""><HeaderLogo src="https://1.bp.blogspot.com/-InPOgb5_C7g/XlyfoVtkSrI/AAAAAAABXnQ/hOiIFp5hNFsg_BmcqPogXmFLFb48iM78ACNcBGAsYHQ/s400/clipborad_hakui_man.png" alt="画像がありません"/></a>
-        </HeaderItem>
-        <HeaderItem>新規登録</HeaderItem>
-        <HeaderItem>ログイン</HeaderItem>
+        <StyledLink to="/">
+          <HeaderItem><HeaderLogo src="https://1.bp.blogspot.com/-InPOgb5_C7g/XlyfoVtkSrI/AAAAAAABXnQ/hOiIFp5hNFsg_BmcqPogXmFLFb48iM78ACNcBGAsYHQ/s400clipborad_hakui_man.png" alt="画像がありません"/></HeaderItem>
+        </StyledLink>
+        <StyledLink to="/comment">
+          <HeaderItem>Online心療相談室とは?</HeaderItem>
+        </StyledLink>
       </Container>
     </HeaderClass>
   )
