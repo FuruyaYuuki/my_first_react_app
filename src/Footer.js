@@ -8,8 +8,13 @@ const Container = styled.div`
 `
 
 const FooterClass = styled.footer`
- height: 80px;
+ height: 50px;
+ background-color: rgb(236, 236, 236);
  text-align: center;
+`
+
+const FooterText = styled.p`
+  padding-top: 10px;
 `
 
 export const Footer = () => {
@@ -17,7 +22,7 @@ export const Footer = () => {
   return (
     <FooterClass>
       <Container>
-        <p>(C) Online心療相談室 2021</p>
+        <FooterText>(C) Online心療相談室 2021</FooterText>
       </Container>
     </FooterClass>
   )

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const ListItem = styled.div`
+  font-size: 30px;
   padding: 8px 16px;
 
   &:nth-child(n+2) {
