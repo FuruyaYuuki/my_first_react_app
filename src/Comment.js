@@ -3,17 +3,25 @@ import { Header } from "./Header"
 
 const Container = styled.div`
   height: 867px;
-  margin: 10px 0;
-  padding-left: 450px;
-  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/E146_ishidaiseikou.jpg.webp?d=1420);
-  background-size: 1665px;
+  text-align: center;
+  background-color: #dddddd;
 `
 
-const Text = styled.h1`
-  font-size: 60px;
-  color: #111111;
+const Title = styled.h1`
+  font-size: 55px;
   margin: 0;
-  padding-top: 95px;
+  padding-top: 8px;
+`
+
+const Text = styled.h2`
+  font-size: 23px;
+  margin: 0;
+  padding-bottom: 10px;
+`
+
+const Doctor = styled.img`
+  height: 705px;
+  width: 1680px;
 `
 
 export const Comment = () => {
@@ -21,10 +29,10 @@ export const Comment = () => {
     <div>
       <Header />
       <Container>
-        <Text>このWebサイトは、</Text>
-        <Text>病気によって、</Text>
-        <Text>不登校になった経験がある、</Text>
+        <Title>Online心療相談室</Title>
+        <Text>病気で不登校になった経験がある、</Text>
         <Text>現大学生のアドバイスページです。</Text>
+        <Doctor src="https://pakutaso.cdn.rabify.me/shared/img/thumb/E146_ishidaiseikou.jpg.webp?d=1420" alt="画像がありません"/>
       </Container>
     </div>
   );

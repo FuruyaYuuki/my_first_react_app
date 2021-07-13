@@ -10,7 +10,7 @@ const Body = styled.body`
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Body>
         <Route exact path="/" component={Home} />
         <Route path="/comment" component={Comment} />
