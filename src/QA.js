@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { Index } from "./pagination/Index"
 
-const ListItem = styled.div`
-  font-size: 30px;
-  padding: 8px 16px;
-
-  &:nth-child(n+2) {
-    border-top: 1px solid #D9DBDE;
-  }
+const ListItem = styled.h1`
+  font-size: 20px;
+  margin: 4px 4px;
 `
 
-export const QALists = [
+const ListItem2 = styled.p`
+  font-size: 20px;
+  margin: 12px 4px;
+`
+
+const QALists = [
   {q:'Q. 朝起きるためにはどうしたらいいですか？', a:'A. 徹夜を利用して生活サイクルを激変させましょう!'},
   {q:'Q. 他人の目を気にしないためにはどうしたらいいですか？', a:'A. 何か１つ自信が持てることを成し遂げましょう！'},
   {q:'Q. 自分が嫌いになったらどうしたらいいですか？', a:'A. 誰か信頼してる人に話してみましょう！'},
@@ -28,10 +28,9 @@ export const QA = () => {
     <div>
       {
         QALists.map((QALists, index) => {
-          return <ListItem key={index}>{QALists.q}<br></br>{QALists.a}</ListItem>
+          return <div key={index}><ListItem>{QALists.q}</ListItem><ListItem2>{QALists.a}</ListItem2></div>
         })
       }
-      <Index />
     </div>
   );
 }

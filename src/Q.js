@@ -1,17 +1,11 @@
 import styled from 'styled-components';
-import { Index } from "./pagination/Index"
 
-
-const ListItem = styled.div`
-  font-size: 30px;
-  padding: 8px 16px;
-
-  &:nth-child(n+2) {
-    border-top: 1px solid #D9DBDE;
-  }
+const ListItem = styled.h1`
+  font-size: 20px;
+  margin: 16px 4px;
 `
 
-const QLists = [
+export const QLists = [
   {q:'Q. 朝起きるためにはどうしたらいいですか？'},
   {q:'Q. 他人の目を気にしないためにはどうしたらいいですか？'},
   {q:'Q. 自分が嫌いになったらどうしたらいいですか？'},
@@ -25,16 +19,16 @@ const QLists = [
 ]
 
 export const Q = () => {
+
   return (
     <div>
       {
         QLists.map((QLists, index) => {
-          return <ListItem key={index}>
-            {QLists.q}
-          </ListItem>
+          return <div key={index}>
+            <ListItem>{QLists.q}</ListItem>
+          </div>
         })
       }
-      <Index />
     </div>
   );
 }

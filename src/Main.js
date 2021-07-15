@@ -5,7 +5,7 @@ import { QA } from "./QA"
 import { Button } from "./Button"
 
 const MainClass = styled.main`
-  height: 795px;
+  height: 1100px;
 `
 
 const Container = styled.div`
