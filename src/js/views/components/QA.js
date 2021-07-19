@@ -1,11 +1,18 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`
 
 const ListItem = styled.h1`
+  color: black;
   font-size: 20px;
   margin: 4px 4px;
 `
 
 const ListItem2 = styled.p`
+  color: black;
   font-size: 20px;
   margin: 12px 4px;
 `
@@ -28,7 +35,9 @@ export const QA = () => {
     <div>
       {
         QALists.map((QALists, index) => {
-          return <div key={index}><ListItem>{QALists.q}</ListItem><ListItem2>{QALists.a}</ListItem2></div>
+          return <div key={index}>
+            <StyledLink to="./Show"><ListItem>{QALists.q}</ListItem><ListItem2>{QALists.a}</ListItem2></StyledLink>
+          </div>
         })
       }
     </div>

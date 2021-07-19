@@ -1,9 +1,16 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`
 
 const ListItem = styled.h1`
+  color: black;
   font-size: 20px;
   margin: 16px 4px;
 `
+
 
 const QLists = [
   {q:'Q. 朝起きるためにはどうしたらいいですか？'},
@@ -25,7 +32,7 @@ export const Q = () => {
       {
         QLists.map((QLists, index) => {
           return <div key={index}>
-            <ListItem>{QLists.q}</ListItem>
+            <StyledLink to="./Show"><ListItem>{QLists.q}</ListItem></StyledLink>
           </div>
         })
       }

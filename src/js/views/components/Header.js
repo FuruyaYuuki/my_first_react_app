@@ -15,7 +15,7 @@ const Container = styled.div`
   margin: 0 auto;
   display: grid;
 
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
   justify-content: center;
   place-items: center;
 `
@@ -44,6 +44,9 @@ export const Header = () => {
         </StyledLink>
         <StyledLink to="/comment">
           <HeaderItem>Online心療相談室とは?</HeaderItem>
+        </StyledLink>
+        <StyledLink to="/Search">
+          <HeaderItem>🔍</HeaderItem>
         </StyledLink>
       </Container>
     </HeaderClass>
