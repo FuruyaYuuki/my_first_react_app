@@ -43,6 +43,7 @@ export const Table= () => {
   const [items, setItems] = useState(QLists);
   const [value, setValue] = useState("");
   const [filteredItems, setFiltered] = useState([]); //追加
+  // const [text, setText] = useState("");
 
   const handleSearch = (e) => {
     setValue(e.target.value);
@@ -56,6 +57,10 @@ export const Table= () => {
     });
     setFiltered(newItems); //変更
   }, [value]);
+
+  // const changeText = () => {
+  //   setText(items);
+  // }
 
   return (
     <div>

@@ -4,6 +4,7 @@ import { Home } from "./views/components/Home"
 import { Comment } from "./views/components/Comment"
 import { Table } from "./views/components/Search"
 import { Show } from "./views/components/Show"
+import { AddQ } from "./views/components/AddQ"
 
 const Body = styled.body`
   margin: 0 auto;
@@ -18,6 +19,7 @@ function App() {
         <Route path="/comment" component={Comment} />
         <Route path="/search" component={Table} />
         <Route path="/show" component={Show} />
+        <Route path="/addq" component={AddQ} />
       </Body>
     </BrowserRouter>
   );
