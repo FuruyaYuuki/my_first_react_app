@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Home } from "./Home"
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -25,7 +26,7 @@ export const QLists = [
   {q:'Q. あいうえおあいうえおあいうえおあいうえおあいうえお', name:'相談室長'}
 ];
 
-export const Q = () => {
+export const Q = (langs) => {
 
   return (
     <div>
