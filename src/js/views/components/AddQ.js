@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { useState } from 'react';
-import { Header } from "./Header"
 
 const Container = styled.div`
   max-width: 800px;
@@ -38,15 +37,19 @@ const Button = styled.button`
   width: 120px;
 `
 
-export const AddQ = () => {
+export const AddQ = ({ onAddSitumon }) => {
 
   const [text, setText] = useState('');
 
+  const submitAddQ = (event) => {
+    event.preventDafault();
+    onAddSitumon(text);
+  }
+
   return (
     <div>
-      <Header />
       <Container>
-        <form>
+        <form onsubmit={submitAddQ}>
           <div>
             <Label>質問</Label>
             <Input 
