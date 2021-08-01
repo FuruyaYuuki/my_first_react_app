@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
+const ListItem = styled.li`
+  list-style: none;
+  margin: 20px 0;
 `
 
-const ListItem = styled.div`
+const StyledLink = styled(Link)`
+  text-decoration: none;
   color: black;
   font-size: 20px;
-  margin: 8px 0;
 `
 
 export const QA = ({ situmons }) => {
@@ -16,7 +17,7 @@ export const QA = ({ situmons }) => {
     <div>
       {
         situmons.map((situmon, index) => {
-          return <StyledLink to="./Show"><ListItem key={index}>{ situmon }</ListItem></StyledLink>
+          return <ListItem key={index}><StyledLink to="./Show">{ situmon }</StyledLink></ListItem>
         })
       }
     </div>

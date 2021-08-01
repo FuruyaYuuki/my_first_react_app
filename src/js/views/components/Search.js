@@ -10,15 +10,17 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
+const ListItem = styled.li`
+  list-style: none;
+  margin: 20px 0;
 `
 
-const ListItem = styled.h1`
+const StyledLink = styled(Link)`
+  text-decoration: none;
   color: black;
   font-size: 20px;
-  margin: 16px 4px;
 `
+
 
 const SearchPlace = styled.input`
   height: 30px;
@@ -77,16 +79,12 @@ export const Table= () => {
         {!filteredItems
           ? items.map((item, index) => {
               return (
-                <StyledLink to="./Show">
-                  <ListItem key={index}>{item.q}</ListItem>
-                </StyledLink>
+                <ListItem key={index}><StyledLink to="./Show">{item.q}</StyledLink></ListItem>
               );
             })
           : filteredItems.map((item, index) => {
               return (
-                <StyledLink to="./Show">
-                  <ListItem key={index}>{item.q}</ListItem>
-                </StyledLink>
+                <ListItem key={index}><StyledLink to="./Show">{item.q}</StyledLink></ListItem>
               );
             })}
       </Container>

@@ -49,13 +49,14 @@ export const AddQ = ({ onAddSitumon }) => {
   return (
     <div>
       <Container>
-        <form onsubmit={submitAddQ}>
+        <form onSubmit={submitAddQ}>
           <div>
             <Label>質問</Label>
             <Input 
               type="text"
               value={text}
               onChange={(e) => setText(e.target.value)}
+              placeholder="Q.〜 A.〜と入力"
             />
           </div>
           <ButtonContainer>

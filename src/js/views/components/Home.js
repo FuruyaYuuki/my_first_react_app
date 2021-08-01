@@ -7,7 +7,7 @@ import { AddQ } from "./AddQ"
 import { QALists } from "../const/QAs"
 
 const MainClass = styled.main`
-  height: 823px;
+  height: 807px;
 `
 
 const Container = styled.div`
@@ -19,7 +19,6 @@ const Container = styled.div`
 
 const HeaderUl = styled.ul`
   display: flex;
-  margin: 0;
   padding: 0;
 `
 
